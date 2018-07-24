@@ -10,11 +10,9 @@
 
 <!-- Begin Footer -->
 
-<div id="footer">
+<div>
 	
 	<?php wp_nav_menu( array( 'theme-location' => 'footer-menu') ); ?>
-
-
 
 </div>
 <!-- End Footer -->

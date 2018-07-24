@@ -28,7 +28,7 @@
 <body>
 
 <!-- Begin Navigation Bar -->
-	<div id="navBar">
+	<div>
 
 		<?php wp_nav_menu( array( 'theme-location' => 'nav-menu' ) ); ?>
 
