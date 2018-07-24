@@ -1,0 +1,377 @@
+/*
+Theme Name: Beat2Deaf
+Author: ATinyLemon
+Author URI: https://atinylemon.com
+Description: Music site is a modern theme with a purpose of displaying the top notch music of the person buying the theme.
+Version: 0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: twentysixteen
+
+This theme, like WordPress, is licensed under the GPL.
+Show off your sick beats, yo.
+*/
+
+/********************** INDEX *******************************
+
+1. Global Styles
+2. Navigation
+3. Home Page
+
+************************************************************/
+
+/* Global Styling */
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body, html {
+	font-family: serif;;
+	font-size: 100%;
+	color:#FFFFFF;
+	background-color: #191919;
+	padding: 0;
+	margin:0;
+	height:auto;
+	touch-action:manipulation;
+}
+
+#Menu{
+	background-color: #f2f91c;
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+	cursor:pointer;
+}
+
+#Menu:hover{
+	opacity:.8;
+}
+
+.innerMenu{
+	    margin-top: 2rem;
+}
+
+.Line1{
+	background-color: #2f2f2f;
+    width: 3.6rem;
+    height: .6rem;
+    margin: 0rem 0rem .2rem 1rem;
+}
+
+.Line2{
+    background-color: #2f2f2f;
+    width: 2.6rem;
+    height: .6rem;
+    margin: 0rem 0rem .2rem 1rem;
+}
+
+.Line3{
+    background-color: #2f2f2f;
+    width: 1.6rem;
+    height: .6rem;
+    margin: 0rem 0rem .2rem 1rem;
+}
+
+
+#navBar{
+	position: fixed;
+	height: 6rem;
+	display:none;
+    margin-left:6rem;
+    width: 100%;
+	background-color: rgba(25, 25, 25, 0.788235294117647);
+	font-size:1.5em;
+}
+
+#navBar a {
+	color:white;
+	text-decoration: none;
+	transition: all ease-in .3s;
+}
+
+#navBar a:hover {
+	border-bottom: .3rem solid #f2f91c;
+}
+
+#menu-default-nav li{
+	margin-right: 2rem;
+	font-size: 1.1rem;
+}
+
+.menu-default-nav-container{
+	padding-top: 0.7rem;
+}
+
+h1 {
+	font-size:5em; /*font units to be defined as em, NOT px */
+}
+
+h2 {
+	font-size:4em;
+}
+
+h3 {
+	font-size:3em;
+}
+
+
+/*Begin Navigation*/
+
+ul {
+	list-style-type: none;
+	display:flex;
+
+}
+
+ul a{
+	color:#FFFFFF;
+	font-weight: bold;
+	transition: color .5s; /* Fade in/out effect for the nav links */
+}
+
+ul a:hover {
+	text-decoration:none;
+	color:red;
+}
+
+ul li {
+	padding:10px;
+}
+
+
+
+/* Home Page*/
+#content{
+	display: inline-block;
+	width: 100%
+}
+
+#bg1{
+	background-image: url("images/audio_mix_cover.jpg");
+	background-attachment: fixed;
+	background-size: cover;                      
+    background-repeat: no-repeat;
+    background-position: 50% 73%;
+    height: 100%;
+}
+
+.title {
+	color:white; /*change the color; using this to stand out*/
+	float:left;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    margin-right: 8rem;
+}
+
+.title p{
+	margin-left: 2rem;
+	text-align:center;
+	font-size: 1.3rem;
+	background: rgba(255, 255, 0, 0.15);
+}
+
+.title h1{
+	margin-bottom: 0rem;
+	text-align:center;
+}
+
+#SoundC{
+    float: right;
+    margin-left: 8rem;
+    margin-top: 8rem;
+    margin-right: 8rem;
+    width:30rem;
+}
+
+.widget_text.widget-content{
+	margin-top: 2rem;
+}
+
+.playlist{
+	margin-bottom: 1rem;
+}
+
+.pgFooter{
+	display:flex;
+	padding-top: 12%;
+	margin-top: 8vh;
+}
+
+.genre {
+	color:#FFFFFF;
+	font-size: .3rem;
+	float:left;
+	width: 34vh;
+    margin-left: 9rem;
+	margin-top: 1.4rem;
+}
+
+.storeWrap{
+	float:right;
+	width: 106vh;
+	height: 7rem;
+	margin-top:-1rem;
+	overflow:hidden;
+}
+
+.storebck{
+	display: flex;
+}
+
+.storeDisplay{
+	width: 9rem;
+	height: 9rem;
+	background-color: gray;
+	overflow:hidden;
+	margin-right: 1rem;
+	cursor:pointer;
+}
+
+.storeDisplay img{
+	height: 7rem;
+    width: 9rem;
+}
+
+.storeDisplay:hover{
+    opacity:.9;
+}
+
+
+.storeDisplayV{
+	width: 9rem;
+	height: 9rem;
+	background-color: white;
+	overflow:hidden;
+	margin-right: 1rem;
+	text-align: center;
+	cursor:pointer;
+}
+.storeDisplayV:hover{
+	opacity:.7;
+}
+
+
+.storeDisplayV a{
+	text-decoration: none;
+    color: black;
+}
+
+.storeDisplayV p{
+	margin-top: 33%;
+}
+
+.MainStoreCon{
+	max-width: 100%;
+    height: 50.5rem;
+    background: bisque;
+    margin-bottom: 0rem;
+	display: list-item;
+}
+
+.MainStoreCon h3{
+	margin: 0;
+	margin-left: 35.8%;
+    padding-top: 6vh;
+}
+
+.load{
+	animation: slide 2s;
+}
+
+.slider{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	animation: slide 40s infinite;
+}
+
+.content{
+	color: #fff;
+	width: 100%;
+	height:100vh;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.principal{
+	margin-top: -1rem;
+	letter-spacing: 0.1rem;
+	text-align: left;
+	font-style: oblique;
+	width: 100%;
+}
+
+.principal a{
+text-decoration:none;
+border-bottom:none;
+font-style:normal;
+}
+
+.principal div{
+	padding-top: 8rem;
+	font-size: 1.13rem;
+}
+.principal p{
+	background: rgba(255, 255, 0, 0.23);
+}
+
+.pOne{
+	margin-left: 4%;
+	margin-right: 47%;
+}
+
+.pTwo{
+	margin-left: 26%;
+    margin-right: 18%;
+}
+
+.pThree{
+	margin-left: 55%;
+	margin-right: 1%
+}
+@keyframes slide{
+	0%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/earphones-earpods-justifyyourlove-802958.jpg');
+	}
+	20%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/earphones-earpods-justifyyourlove-802958.jpg');
+	}
+	20.01%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/bookcase-bookshelves-bookstore-351265.jpg');
+	}
+	40%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/bookcase-bookshelves-bookstore-351265.jpg');
+	}
+	40.01%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/black-and-white-business-computer-164732.jpg');
+	}
+	60%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/black-and-white-business-computer-164732.jpg');
+	}
+	60.01%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/audio-disc-jockey-dj-1534.jpg');
+	}
+	80%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/audio-disc-jockey-dj-1534.jpg');
+	}
+	80.01%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/audio-business-computer-257904.jpg');
+	}
+	100%{
+		background-image: url('http://localhost:8888/testsite/wp-content/uploads/2018/07/audio-business-computer-257904.jpg');
+	}
+}
+
+/* Footer */
+
+#footer {
+	background-color:white;
+	height: 2rem;
+}
