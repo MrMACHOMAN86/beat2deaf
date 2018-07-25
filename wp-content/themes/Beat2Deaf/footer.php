@@ -10,6 +10,8 @@
 
 <!-- Begin Footer -->
 
+<!-- Testing Git Changes on Branch -->
+
 <div>
 	
 	<?php wp_nav_menu( array( 'theme-location' => 'footer-menu') ); ?>
